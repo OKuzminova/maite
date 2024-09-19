@@ -1,0 +1,129 @@
+.header {
+  contain: layout;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+// .header__logo {
+//   margin-top: -10px;
+//   padding-left: 3%;
+//   @media (max-width: @laptop-width) {
+//     padding-left: 3%;
+//   }
+// }
+// .header__menu {
+//   font-size: 20px;
+//   @media (max-width: @laptop-width) {
+//     font-size: 18px;
+//     padding-left: -20px;
+//   }
+// }
+// .header__list {
+//   display: flex;
+//   gap: 30px;
+//   @media (max-width: @laptop-width) {
+//     gap: 20px;
+//   }
+// }
+// .header__item a {
+//   position: relative;
+//   display: block;
+// }
+// .header__item--link:hover::after {
+//   position: absolute;
+//   content: url("../../img/icons/arrow.svg");
+//   top: 18px;
+//   left: 38%;
+// }
+// .header__folder {
+//   background-color: @color-black;
+//   padding: 25px 40px 20px;
+//   border-radius: 40px 10px 0px 0px;
+//   margin-bottom: -5px;
+//   @media (max-width: @tablet-width) {
+//     display: none;
+//   }
+// }
+
+/* BLACK block*/
+.header__main {
+  background-color: @color-blue-dark;
+  height: max-content;
+  border-radius: 10px;
+  padding: 150px 60px;
+  margin-bottom: 10px;
+  @media (max-width: @laptop-width) {
+    padding: 60px 50px;
+  }
+  @media (max-width: @tablet-width) {
+    padding: 50px 30px;
+    min-height: 50vh;
+  }
+  @media (max-width: @mobile-width) {
+    padding: 60px 30px;
+    height: max-content;
+  }
+}
+@media (max-width: @mobile-width) {
+  .header__main-card {
+    padding: 90px 30px 30px;
+  }
+  .header__main-hobby {
+    padding: 30px;
+  }
+}
+.header__privacy {
+  @media (max-width: @laptop-width) {
+    padding: 70px 50px 110px;
+  }
+  @media (max-width: @tablet-width) {
+    padding: 80px 20px 30px;
+  }
+  @media (max-width: @mobile-width) {
+    padding: 60px 30px;
+  }
+}
+
+.header__container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  @media (max-width: @laptop-width) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.header__photo {
+  width: 500px;
+  height: 888px;
+  background-image: url('../../img/maite-900x1600.jpg');
+  background-repeat: no-repeat;
+  background-size: 500px 888px;
+  display: block;
+  @media (max-width: @mobile-width) {
+    background-image: url('../../img/okuzminova-368x476.jpg');
+    width: 193px;
+    height: 238px;
+    background-size: 193px 238px;
+  }
+}
+
+
+.header__description {
+  color: @color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: @laptop-width) {
+    text-align: center;
+  }
+  &--position {
+    text-align: center;
+  }
+}
+

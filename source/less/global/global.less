@@ -1,0 +1,266 @@
+// Colors
+@color-black: #444444;
+@color-blue: #135498;
+@color-blue-dark: #6992B5;
+@color-green: #708C69;
+@color-black-dark: #15171a;
+@color-white: #FAF8F6;
+// @color-white: #FCF3E3;
+@color-grey: #8899AA;
+@color-grey-dark: #3d434a;
+@color-blue-main: #4795E6;
+@color-blue-light: #81CEEF;
+// @color-blue: #3EBEE7;
+@color-purple: #7186EA;
+@color-purple-dark: #253998;
+@color-purple-light: #AFBBF4;
+
+@color-sandy: #EECCBB;
+@color-sandy-dark: #B39F96;
+@color-sandy-light: #F7E3D9;
+
+//maite-color
+@color-pebble: #444444;
+@color-olive: #716D64;
+@color-fern: #9B997B;
+@color-dusk: #D1B9B4;
+@color-ivory: #FAF8F6;
+@color-oat: #DFD1C9;
+//maite-end
+// Viewports
+@laptop-width: 1025px;
+@tablet-width: 768px;
+@mobile-width: 425px;
+
+// Fonts Rubik
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik Light'), local('Rubik-Light'),
+  url('../../fonts/Rubiklight.woff2') format('woff2'),
+  url('../../fonts/Rubiklight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik'), local('Rubik-Regular'),
+  url('../../fonts/Rubik.woff2') format('woff2'),
+  url('../../fonts/Rubik.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik Bold'), local('Rubik-Bold'),
+  url('../../fonts/Rubikbold.woff2') format('woff2'),
+  url('../../fonts/Rubikbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: optional;
+}
+
+/* New FONTS*/
+@font-face {
+  font-family: 'Caveat';
+  src: local('Caveat Regular'), local('Caveat-Regular'),
+      url('../../fonts/Caveat-Regular.woff2') format('woff2'),
+      url('../../fonts/Caveat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: local('Caveat Bold'), local('Caveat-Bold'),
+      url('../../fonts/Caveat-Bold.woff2') format('woff2'),
+      url('../../fonts/Caveat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+.caveat {
+  font-family: 'Caveat';
+  font-size: 34px;
+  color: @color-black-dark;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 30px;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: local('Urbanist Italic'), local('Urbanist-Italic'),
+      url('../../fonts/Urbanist-Italic.woff2') format('woff2'),
+      url('../../fonts/Urbanist-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: local('Urbanist Regular'), local('Urbanist-Regular'),
+      url('../../fonts/Urbanist-Regular.woff2') format('woff2'),
+      url('../../fonts/Urbanist-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  src: local('Zen Maru Gothic Bold'), local('ZenMaruGothic-Bold'),
+      url('../../fonts/ZenMaruGothic-Bold.woff2') format('woff2'),
+      url('../../fonts/ZenMaruGothic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  src: local('Zen Maru Gothic Light'), local('ZenMaruGothic-Light'),
+      url('../../fonts/ZenMaruGothic-Light.woff2') format('woff2'),
+      url('../../fonts/ZenMaruGothic-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  src: local('Zen Maru Gothic Medium'), local('ZenMaruGothic-Medium'),
+      url('../../fonts/ZenMaruGothic-Medium.woff2') format('woff2'),
+      url('../../fonts/ZenMaruGothic-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  src: local('Zen Maru Gothic Regular'), local('ZenMaruGothic-Regular'),
+      url('../../fonts/ZenMaruGothic-Regular.woff2') format('woff2'),
+      url('../../fonts/ZenMaruGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  margin: 5px 5px 10px;
+  padding: 0px;
+  font-family: 'Zen Maru Gothic', "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: @color-black-dark;
+  background-color: @color-white;
+  @media (max-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.page {
+  height: 100%;
+  margin: 20px;
+  @media (max-width: @mobile-width) {
+    margin: 5px;
+  }
+}
+
+.page-body {
+  display: grid;
+  grid-auto-rows: min-content 1fr min-content;
+  min-height: 100%;
+  word-wrap: break-word;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+h1 {
+  font-size: 80px;
+  font-family: 'Zen Maru Gothic', "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 90px;
+  margin: 0;
+  color: @color-white;
+  @media (max-width: @laptop-width) {
+    font-size: 70px;
+  }
+  @media (max-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  @media (max-width: @mobile-width) {
+    font-size: 42px;
+    line-height: 1;
+  }
+}
+h2 {
+  font-size: 62px;
+  margin: 50px 0 30px;
+  text-align: center;
+  @media (max-width: @laptop-width) {
+    font-size: 52px;
+  }
+  @media (max-width: @mobile-width) {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+.h2__white {
+  color: @color-white;
+}
+h3 {
+  font-size: 32px;
+  @media (max-width: @laptop-width) {
+    font-size: 28px;
+  }
+  @media (max-width: @mobile-width) {
+    font-size: 22px;
+    line-height: 1;
+  }
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: @color-black-dark;
+  &:hover {
+    color: @color-green;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+p {
+  margin: 0;
+}
+svg {
+  stroke: none;
+}
+dd {
+  margin: 0;
+}
+figure {
+  margin: 0px;
+}

@@ -1,0 +1,142 @@
+.contact {
+  height: max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+.contact__content {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (max-width: @laptop-width) {
+    gap: 30px calc(2% - 10px);
+  }
+}
+.contact__description {
+  width: 600px;
+  // font-size: 32px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: @color-green;
+  padding: 50px 20px;
+  color: @color-white;
+  text-align: center;
+  @media (max-width: 1200px) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  @media (max-width: @laptop-width) {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  @media (max-width: @mobile-width) {
+    width: 90vw;
+    font-size: 20px;
+  }
+  & h3 {
+    margin: 0px 0px 20px;
+    text-align: center;
+  }
+}
+.contact__content-form {
+  border: 10px solid @color-green;
+  border-radius: 0px 20px 20px 0px;
+}
+.contact__form {
+  width: 500px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  & label {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) {
+    width: 400px;
+  }
+  @media (max-width: @mobile-width) {
+    width: 280px;
+    padding: 50px 30px 50px 20px;
+  }
+}
+.contact__label {
+  width: 100%;
+  padding: 20px 5px 15px;
+  border: 2px solid @color-blue;
+  border-radius: 4px;
+  position: relative;
+  background-color: @color-blue;
+  @media (max-width: @mobile-width) {
+    padding: 10px 5px 8px;
+  }
+  &::after {
+    position: absolute;
+    content: "Name";
+    font-family: 'Caveat';
+    font-size: 24px;
+    color: @color-white;
+    background-color: @color-blue;
+    border-radius: inherit;
+    top: -16px;
+    left: 20px;
+    width: max-content;
+    margin-left: -22px;
+    padding: 0px 10px;
+    @media (max-width: @mobile-width) {
+      font-size: 14px;
+    }
+  }
+  &--en::after {
+    content: "Name";
+  }
+  &:nth-child(2)::after {
+    content: "Email";
+  }
+  &--en:nth-child(2)::after {
+    content: "Email";
+  }
+  &:nth-child(3)::after {
+    content: "Message";
+  }
+  &--en:nth-child(3)::after {
+    content: "Message";
+  }
+  &:hover {
+    background-color: @color-blue;
+  }
+  & input, & textarea {
+    width: 98%;
+    font-size: 16px;
+    cursor: pointer;
+    @media (max-width: @mobile-width) {
+      font-size: 14px;
+    }
+  }
+  & input:hover {
+    outline: none;
+    border: none;
+    margin-bottom: -2px;
+    // &::placeholder {
+    //   color: @color-white;
+    // }
+  }
+  & input:focus {
+    outline: none;
+    border: none;
+    margin-bottom: -2px;
+  }
+  & textarea:hover::placeholder {
+    color: @color-black;
+  }
+  & input::placeholder, & textarea::placeholder {
+    color: @color-black;
+    font-size: 16px;
+    opacity: 0.8;
+    @media (max-width: @mobile-width) {
+      font-size: 14px;
+      color: @color-black;
+    }
+  }
+}
+.contact__label:hover > .contact__label {
+  background-color: @color-blue;
+}

@@ -1,0 +1,219 @@
+// /* Кнопка черная */
+// .link__btn-black {
+//   font-size: 16px;
+//   background: @color-black;
+//   box-shadow:
+//   3px 3px 6px @color-black-dark,
+//   -3px -3px 6px @color-grey-dark;
+//   padding: 10px;
+//   border-radius: 10px;
+//   &--active, &:hover {
+//     box-shadow:
+//     3px 3px 6px @color-black-dark,
+//     -3px -3px 6px @color-grey-dark,
+//     inset 4px 4px 6px @color-black-dark,
+//     inset -4px -4px 6px @color-grey-dark;
+//   }
+//   @media (max-width: @tablet-width) {
+//     padding: 8px;
+//   }
+//   @media (max-width: @mobile-width) {
+//     padding: 5px;
+//   }
+// }
+// /* Кнопка клавиатура */
+// .link__btn-keyboard {
+//   padding: 1.2px 2.5px 1px 5px;
+//   width: 154px;
+//   height: 52px;
+//   background-color: @color-white;
+//   border: 1.2px solid @color-black-dark;
+//   border-radius: 3.6px;
+//   font-size: 12px;
+//   cursor: pointer;
+//   &--big {
+//     width: 170px;
+//   }
+// }
+// .link__btn-keyboard--purple {
+//   background-color: @color-purple;
+// }
+// .link__btn-keyboard--purple:hover {
+//   background-color: @color-purple;
+// }
+// .link__btn-keyboard a {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   bottom: 4.5px;
+//   width: 150px;
+//   height: 45px;
+//   background-color: @color-white;
+//   border-radius: 3.6px;
+//   font-size: 18px;
+//   color: @color-black-dark;
+//   border: 1.2px solid @color-black-dark;
+//   box-shadow: 0 7.2px 1.8px 0.5px @color-black-dark;
+//   @media (max-width: @tablet-width) {
+//     font-size: 16px;
+//   }
+// }
+// .link__btn-keyboard--big a {
+//   width: 166px;
+// }
+// .link__btn-keyboard--purple a:hover {
+//     background-color: @color-purple;
+// }
+// .link__btn-keyboard a:hover {
+//   transition: all 0.5s;
+//   transform: translate(0, 0.4em);
+//   box-shadow: 0 0 0 0 @color-black-dark;
+// }
+
+// .link__btn-keyboard a:not(hover) {
+//   transition: all 1s;
+// }
+
+// /* Ссылка со стрелкой */
+// .link__arrow {
+//   color: @color-blue;
+//   position: relative;
+//   font-size: 22px;
+//   &::after {
+//     position: absolute;
+//     content: url("../../img/icons/decor/link-arrow.svg");
+//     transform: rotate(38deg);
+//     top: -6px;
+//   }
+//   @media (max-width: @laptop-width) {
+//     font-size: 18px;
+//   }
+//   &:hover {
+//     &::after {
+//       position: absolute;
+//       content: url("../../img/icons/decor/link-arrow-dark.svg");
+//       transform: rotate(38deg);
+//       top: -6px;
+//     }
+//   }
+// }
+
+// /* Кнопка черная */
+// .link__btn-green {
+//   margin: 20px;
+//   display: block;
+//   font-size: 16px;
+//   background: @color-green;
+//   color: @color-white;
+//   box-shadow:
+//   3px 3px 6px @color-green-dark,
+//   -3px -3px 6px @color-green-light;
+//   padding: 10px;
+//   border-radius: 10px;
+//   &--active, &:hover {
+//     color: @color-white;
+//     box-shadow:
+//     3px 3px 6px @color-green-dark,
+//     -3px -3px 6px @color-green-light,
+//     inset 4px 4px 6px @color-green-dark,
+//     inset -4px -4px 6px @color-green-light;
+//   }
+// }
+
+// .link__btn-color(@color; @bg-color; @color-dark; @color-light) {
+//   margin: 20px;
+//   display: block;
+//   font-size: 16px;
+//   background: @bg-color;
+//   color: @color;
+//   box-shadow:
+//   3px 3px 6px @color-dark,
+//   -3px -3px 6px @color-light;
+//   padding: 10px;
+//   border-radius: 10px;
+//   &--active, &:hover {
+//     color: @color;
+//     box-shadow:
+//     3px 3px 6px @color-dark,
+//     -3px -3px 6px @color-light,
+//     inset 4px 4px 6px @color-dark,
+//     inset -4px -4px 6px @color-light;
+//   }
+// }
+
+// /* Ссылка с подчеркиванием */
+// .link__contact {
+//   color: @color-black;
+//   position: relative;
+//   margin-left: 40px;
+//   &::before {
+//     position: absolute;
+//     content: url('../../img/icons/social/icon-email.svg');
+//     left: -40px;
+//     top: 2px;
+//     @media (max-width: @laptop-width) {
+//       top: -4px;
+//     }
+//     @media (max-width: @mobile-width) {
+//       top: -6px;
+//     }
+//   }
+//   &:hover {
+//     color: @color-blue-light;
+//   }
+// }
+// /* SVG иконки*/
+// .link__icon {
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   width: 40px;
+//   height: 40px;
+//   cursor: pointer;
+//   &--email {
+//     background-image: url('../../img/icons/social/icon-email.svg');
+//     background-size: 45px 45px;
+//   }
+//   &--whatsapp {
+//     color: @color-blue;
+//     background-image: url('../../img/icons/social/icon-whatsapp.svg');
+//     background-size: 40px 40px;
+//   }
+//   &--telegram {
+//     color: @color-blue;
+//     background-image: url('../../img/icons/social/icon-telegram.svg');
+//     background-size: 30px 30px;
+//   }
+//   &--skype {
+//     background-image: url('../../img/icons/social/icon-skype.svg');
+//     background-size: 30px 30px;
+//   }
+//   &--vk {
+//     background-image: url('../../img/icons/social/icon-vk.svg');
+//     background-size: 35px 35px;
+//   }
+//   &--instagram {
+//     background-image: url('../../img/icons/social/icon-instagram.svg');
+//     background-size: 35px 35px;
+//   }
+//   &--github {
+//     background-image: url('../../img/icons/social/icon-github.svg');
+//     background-size: 45px 45px;
+//   }
+//   &--card {
+//     background-image: url('../../img/icons/social/icon-card.svg');
+//     background-size: 35px 35px;
+//   }
+//   &:hover {
+//     color: @color-purple;
+//   }
+// }
+
+.link-active {
+  color: @color-green;
+  border: 2px solid @color-green;
+  &:hover {
+    background-color: @color-green;
+    color: @color-white;
+  }
+}

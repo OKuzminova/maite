@@ -1,0 +1,16 @@
+.biography {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  @media (max-width: @mobile-width) {
+    flex-direction: column;
+  }
+}
+.biography__text {
+  color: @color-black-dark;
+  & p{
+    padding-bottom: 10px;
+  }
+}

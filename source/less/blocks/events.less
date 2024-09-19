@@ -1,0 +1,48 @@
+.events {
+  padding: 20px 30px 60px;
+  background-color: @color-blue-dark;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+.events__container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.events__img {
+  width: 570px;
+  height: 800px;
+  object-fit: cover;
+}
+.events__daily {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: max-content;
+  gap: 20px 40px;
+  color: @color-white;
+  &-day {
+    padding: 10px 20px;
+    background-color: @color-blue;
+    height: 370px;
+    border-radius: 50%;
+  }
+}
+.day {
+  display: block;
+  // border: 2px solid @color-white;
+  padding-left: 20px;
+  text-align: center;
+}
+.day__name h3 {
+  color: @color-white;
+  border-bottom: 1px solid @color-white;
+}
+.day__location::before {
+  position: relative;
+  content: url("../../img/location.svg");
+  left: -5px;
+  top: 6px;
+}
+.day__list--btn {
+  margin-top: 40px;
+}

@@ -1,0 +1,245 @@
+// .button {
+//   border: 1px solid @color-white;
+//   border-radius: 10px;
+//   padding: 10px;
+//   cursor: pointer;
+//   @media (max-width: @mobile-width) {
+//     font-weight: normal;
+//   }
+// }
+.button__contact {
+  margin: 0 auto;
+  cursor: pointer;
+}
+// .button__contact button {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   bottom: 4.5px;
+//   width: 150px;
+//   height: 45px;
+//   background-color: @color-white;
+//   border-radius: 3.6px;
+//   font-size: 18px;
+//   color: @color-black-dark;
+//   border: 1.2px solid @color-black-dark;
+//   box-shadow: 0 7.2px 1.8px 0.5px @color-black-dark;
+// }
+// .button__contact button:hover {
+//   transition: all 0.5s;
+//   background-color: @color-purple;
+//   transform: translate(0, 0.4em);
+//   box-shadow: 0 0 0 0 @color-black-dark;
+// }
+
+// .button__contact button:not(hover) {
+//   transition: all 1s;
+// }
+
+// // Кнопка для навигации
+// .button__nav-toggle {
+//   display: none;
+//   @media (max-width: @tablet-width) {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     z-index: 2;
+//     display: block;
+//     width: 180px;
+//     height: 80px;
+//     border-radius: 40px 10px 0px 0px;
+//     background-color: @color-black;
+//     cursor: pointer;
+//     border: none;
+//   }
+//   &:hover, &:active {
+//     @media (max-width: @tablet-width) {
+//       // background-color: #624530;
+//     }
+//   }
+// }
+
+// @media (max-width: @tablet-width) {
+//   .button__nav--closed .button__nav-toggle::before{
+//     content: "Меню";
+//     position: absolute;
+//     top: 15px;
+//     left: 50px;
+//     font-size: 16px;
+//     background: @color-black;
+//     color: @color-blue;
+//     box-shadow:
+//     3px 3px 6px @color-black-dark,
+//     -3px -3px 6px @color-grey-dark;
+//     padding: 10px;
+//     border-radius: 10px;
+//   }
+//   .button__nav--closed .button__nav-toggle::before:hover {
+//     box-shadow:
+//     3px 3px 6px @color-black-dark,
+//     -3px -3px 6px @color-grey-dark,
+//     inset 4px 4px 6px @color-black-dark,
+//     inset -4px -4px 6px @color-grey-dark;
+//   }
+//   .button__nav--closed .header__item {
+//     display: none;
+//   }
+//   .button__nav--closed .header__item--active {
+//     display: block;
+//   }
+//   .button__nav--closed .header__item--active a {
+//     padding-right: 70px;
+//     padding-left: 70px;
+//     text-align: center;
+//   }
+//   .button__nav--opened .header__wrapper {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     left: 70px;
+//     z-index: 10;
+//     min-height: 80vh;
+//     background-color: #6a4d38;
+//   }
+//   .button__nav--opened .header__wrapper::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 2;
+//     width: 7px;
+//     height: 100%;
+//     box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
+//   }
+//   .button__nav--opened .button__nav-toggle {
+//     top: 0;
+//     right: auto;
+//     left: 0;
+//   }
+//   .button__nav--opened .button__nav-toggle::before,
+//   .button__nav--opened .button__nav-toggle::after {
+//     content: "";
+//     position: absolute;
+//     top: 24px;
+//     left: 18px;
+//     width: 36px;
+//     height: 2px;
+//     background-color: #ffffff;
+//   }
+//   .button__nav--opened .button__nav-toggle::before {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+//   .button__nav--opened .button__nav-toggle::after {
+//     transform: rotate(-45deg);
+//   }
+//   .button__nav--opened .button__nav-toggle:active::before,
+//   .button__nav--opened .button__nav-toggle:active::after {
+//     background-color: rgba(255, 255, 255, 0.3);
+//   }
+// }
+// .button__white {
+//   margin: 0 auto;
+//   text-align: center;
+//   width: 350px;
+//   background-color: @color-white;
+//   color: @color-black;
+//   box-shadow:
+//     5px 5px 8px lighten(@color-grey-dark, 50%),
+//     -5px -5px 8px lighten(@color-white, 70%);
+//   border-radius: 10px;
+//   cursor: pointer;
+//   @media (max-width: @tablet-width) {
+//     width: 200px;
+//   }
+//   @media (max-width: @mobile-width) {
+//     width: 150px;
+//   }
+// }
+// .button__white button {
+//   width: inherit;
+//   background-color: @color-white;
+//   border-radius: 10px;
+//   padding: 10px;
+//   border: none;
+//   font-size: 22px;
+//   line-height: 2;
+//   color: @color-black;
+//   &--active, &:hover {
+//     transition: all 0.5s;
+//     box-shadow:
+//     6px 6px 9px lighten(@color-grey-dark, 60%),
+//     -6px -6px 9px lighten(@color-white, 80%),
+//     inset 6px 6px 8px lighten(@color-grey-dark, 60%),
+//     inset -6px -6px 8px lighten(@color-white, 80%);
+//   }
+//   &:not(hover) {
+//     transition: all 1s;
+//   }
+//   @media (max-width: @tablet-width) {
+//     font-size: 18px;
+//   }
+// }
+
+
+
+.button {
+  font-family: 'Caveat', "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: @color-green;
+  color: #fff;
+  border-radius: 10rem;
+  border: 2px solid @color-white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: @color-white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: @color-black;
+}
+
+.button:hover .button__icon-wrapper {
+  color: @color-black;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
