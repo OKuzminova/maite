@@ -1,0 +1,44 @@
+.gift {
+  margin: 0 auto 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 580px);
+  grid-template-rows: 326px 556px;
+  grid-template-areas:
+  "agua agua"
+  "fuego aire";
+  // // height: 326px;
+  // width: max-content;
+  justify-content: center;
+}
+.gift__agua {
+  grid-area: agua;
+  // background: url("../../img/meditation-agua.jpg") no-repeat center / cover;
+  background: url("../../img/meditation-agua.png") no-repeat center / cover;
+  // background-image: url("../../img/meditation-agua.png");
+  background-size: 580px 326px;
+  // background-color: rgb(255 255 0 / 0.5);
+  // &:hover {
+  //   background-color: rgb(255 255 0 / 0.5);
+  // }
+}
+.gift__fuego {
+  grid-area: fuego;
+  background: url("../../img/meditation-fuego.png") no-repeat center / cover;
+}
+.gift__aire {
+  grid-area: aire;
+  background: url("../../img/meditation-aire.png") no-repeat center / cover;
+}
+.gift__text {
+  // background-color: rgb(255 255 0 / 0.5);
+  // color: @color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.gift__btn {
+  margin: 0 auto;
+  text-align: center;
+}

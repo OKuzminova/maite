@@ -1,7 +1,7 @@
 .contact {
   height: max-content;
   width: max-content;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 .contact__content {
   margin: 0 auto;
@@ -13,11 +13,11 @@
   }
 }
 .contact__description {
-  width: 600px;
+  width: 500px;
   // font-size: 32px;
   border-radius: 20px 0px 0px 20px;
   background-color: @color-green;
-  padding: 50px 20px;
+  padding: 50px 50px;
   color: @color-white;
   text-align: center;
   @media (max-width: 1200px) {
@@ -37,6 +37,34 @@
     margin: 0px 0px 20px;
     text-align: center;
   }
+}
+.contact__description-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & a {
+    color: @color-white;
+    &:hover {
+      color: @color-blue;
+    }
+  }
+}
+.contact__inst::before {
+  position: relative;
+  content: url("../../img/icon-instagram.svg");
+  left: -5px;
+  top: 16px;
+}
+.contact__inst:hover, .contact__wa:hover {
+  background-color: @color-white;
+  padding: 20px;
+  border-radius: 50px;
+}
+.contact__wa::before {
+  position: relative;
+  content: url("../../img/icon-whatsapp.svg");
+  left: -10px;
+  top: 16px;
 }
 .contact__content-form {
   border: 10px solid @color-green;

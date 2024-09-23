@@ -1,19 +1,16 @@
 .footer {
   margin: 100px 0px 10px;
-  background-color: @color-black;
-  padding: 30px calc(50% - 790px) 50px;
-  height: max-content;
+  background-color: @color-olive;
+  padding: 30px calc(50% - 790px);
   border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  font-size: 16px;
   color: @color-white;
-  gap: 20px;
   text-align: center;
-  @media (max-width: @laptop-width) {
-    justify-content: start;
+  & a {
+    color: @color-white;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
-}
-.footer__text {
-  text-align: center;
 }
