@@ -2,6 +2,9 @@
   height: max-content;
   width: max-content;
   margin: 0 auto 100px;
+  @media (max-width: @mobile-width) {
+    width: 100vw;
+  }
 }
 .contact__content {
   margin: 0 auto;
@@ -10,6 +13,9 @@
   justify-content: center;
   @media (max-width: @laptop-width) {
     gap: 30px calc(2% - 10px);
+  }
+  @media (max-width: @mobile-width) {
+    gap: 0px calc(2% - 10px);
   }
 }
 .contact__description {
@@ -30,8 +36,10 @@
     padding-bottom: 10px;
   }
   @media (max-width: @mobile-width) {
-    width: 90vw;
-    font-size: 20px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 50px 10px;
+    font-size: 18px;
   }
   & h3 {
     margin: 0px 0px 20px;
@@ -69,6 +77,9 @@
 .contact__content-form {
   border: 10px solid @color-green;
   border-radius: 0px 20px 20px 0px;
+  @media (max-width: @mobile-width) {
+    border-radius: 0px 0px 20px 20px;
+  }
 }
 .contact__form {
   width: 500px;
@@ -110,7 +121,8 @@
     margin-left: -22px;
     padding: 0px 10px;
     @media (max-width: @mobile-width) {
-      font-size: 14px;
+      top: -18px;
+      font-size: 18px;
     }
   }
   &--en::after {

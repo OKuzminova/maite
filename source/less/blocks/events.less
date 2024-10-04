@@ -8,11 +8,28 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .events__img {
   width: 450px;
   height: 800px;
   object-fit: cover;
+  background-image: url("./../../img/maite-nature-2.jpg");
+  // background-position: 50% 50%;
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+.events__img-mobile {
+  display: none;
+  @media (max-width: @tablet-width) {
+    display: block;
+    object-fit: cover;
+    background-image: url("./../../img/events-mobile.jpg");
+    width: 350px;
+    height: 284px;
+    border-radius: 10px;
+  }
 }
 .events__daily {
   display: grid;
@@ -24,6 +41,12 @@
     padding: 10px 20px;
     background-color: @color-blue;
     height: 370px;
+    @media (max-width: @tablet-width) {
+      height: 320px;
+    }
+  }
+  @media (max-width: @tablet-width) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .day {
