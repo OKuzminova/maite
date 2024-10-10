@@ -7,32 +7,43 @@
   grid-template-areas:
   "agua agua"
   "fuego aire";
-  // // height: 326px;
-  // width: max-content;
   justify-content: center;
+  @media (max-width: @laptop-width) {
+    // grid-template-columns: max-content;
+    // grid-template-rows: 200px;
+    grid-template-columns: repeat(1, 90vw);
+    grid-template-rows: 326px 456px 456px;
+    grid-template-areas:
+    "agua"
+    "fuego"
+    "aire";
+    color: @color-black;
+  }
 }
 .gift__agua {
   grid-area: agua;
-  // background: url("../../img/meditation-agua.jpg") no-repeat center / cover;
   background: url("../../img/meditation-agua.png") no-repeat center / cover;
-  // background-image: url("../../img/meditation-agua.png");
   background-size: 580px 326px;
-  // background-color: rgb(255 255 0 / 0.5);
-  // &:hover {
-  //   background-color: rgb(255 255 0 / 0.5);
-  // }
+  @media (max-width: @mobile-width) {
+    border-radius: 10px;
+  }
 }
 .gift__fuego {
   grid-area: fuego;
   background: url("../../img/meditation-fuego.png") no-repeat center / cover;
+  @media (max-width: @mobile-width) {
+    border-radius: 10px;
+  }
 }
 .gift__aire {
   grid-area: aire;
   background: url("../../img/meditation-aire.png") no-repeat center / cover;
+  @media (max-width: @mobile-width) {
+    border-radius: 10px;
+  }
 }
 .gift__text {
-  // background-color: rgb(255 255 0 / 0.5);
-  // color: @color-white;
+  color: @color-black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
